@@ -2,9 +2,10 @@
 
 /* Styles for the task footer container */
 .task-footer {
-    position: absolute;
+    position: fixed;
     bottom: 0;
     left: 0;
+    right: 0;
     width: 100%;
     padding: 20px 0px;
     background-color: #f1f2f3;
