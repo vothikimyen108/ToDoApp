@@ -35,7 +35,7 @@ const Footer = () => {
             onClick={handleclearCompletedTasks}
             disabled={isCompleted}
           >
-            Clear all tasks done
+             clear all completed tasks
           </button>
         </div>
       </div>

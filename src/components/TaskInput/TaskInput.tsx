@@ -45,7 +45,7 @@ const TaskInput = () => {
             type="text"
             value={taskName}
             onChange={handleOnChange}
-            placeholder="Add a new task..."
+            placeholder="What do you want to do?"
             className="task-input-field"
           />
           <input
