@@ -13,11 +13,11 @@ const TaskInput = () => {
   ) => {
     e.preventDefault();
     if (taskName.trim() !== "") {
-      if (taskName.length >= 300) {
+      if (taskName.length >= 70) {
         {
           setShowError({
             isErr: true,
-            message: "Please enter fewer than 300 characters",
+            message: "Please enter fewer than 70 characters",
           });
         }
       } else {

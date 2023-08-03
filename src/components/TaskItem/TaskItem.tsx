@@ -21,11 +21,11 @@ const TaskItem: React.FC<TaskItemProps> = ({ task }) => {
 
   const handleEditSave = () => {
     if (updatedTaskName.trim() !== "") {
-      if (updatedTaskName.length >= 300) {
+      if (updatedTaskName.length >= 70) {
         {
           setShowError({
             isErr: true,
-            message: "Please enter fewer than 300 characters",
+            message: "Please enter fewer than 70 characters",
           });
         }
       } else {
