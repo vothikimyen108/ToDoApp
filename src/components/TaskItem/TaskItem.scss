@@ -1,0 +1,175 @@
+
+@import '../../styles/variables';
+
+.task-item {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.13);
+    margin-bottom: 15px;
+
+    .task-checkbox {
+        position: relative;
+        margin-right: 10px;
+
+        label {
+            background-color: $gray-color;
+            border: 1px solid #ccc;
+            border-radius: 50%;
+            cursor: pointer;
+            height: 24px;
+            left: 0;
+            position: absolute;
+            top: 0;
+            width: 24px;
+
+            &:after {
+                border: 2px solid #fff;
+                border-top: none;
+                border-right: none;
+                content: "";
+                height: 6px;
+                left: 6px;
+                opacity: 0;
+                position: absolute;
+                top: 6px;
+                transform: rotate(-45deg);
+                width: 12px;
+            }
+        }
+
+        input[type="checkbox"] {
+            visibility: hidden;
+
+            &:checked {
+                + {
+                    label {
+                        background-color: green;
+
+                        &:after {
+                            opacity: 1;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .completed {
+        text-decoration: line-through;
+    }
+
+    .task-title {
+        flex: 1;
+        padding: 5px;
+        color: $completed-task-color;
+
+        &.completed {
+            text-decoration: line-through;
+            color: $gray-color;
+        }
+    }
+
+
+    .task-actions {
+        .delete-button {
+            background-color: $danger-color;
+        }
+
+        button {
+            margin-left: 10px;
+            background-color: $primary-color;
+            border: none;
+            color: $primary-color;
+            cursor: pointer;
+            text-decoration: underline;
+            padding: 16px;
+            border-radius: 50%;
+            position: relative;
+
+            &::before {
+                content: attr(data-tooltip);
+                position: absolute;
+                bottom: calc(-80%);
+                right: 0;
+                background-color: #000;
+                color: #fff;
+                padding: 5px 10px;
+                border-radius: 4px;
+                font-size: 12px;
+                opacity: 0;
+                visibility: hidden;
+                transition: opacity 0.3s, visibility 0.3s;
+            }
+
+            &:hover::before {
+                opacity: 1;
+                visibility: visible;
+            }
+
+            &:hover::before {
+                opacity: 1;
+                visibility: visible;
+            }
+
+            &.edit-button {
+                background-image: url('../../assets/images/edit2.svg');
+                background-size: cover;
+                background-size: 60%;
+                background-repeat: no-repeat;
+                background-position: center;
+            }
+
+            &.delete-button {
+                background-image: url('../../assets/images/Vector.svg');
+                background-size: cover;
+                background-size: 60%;
+                background-repeat: no-repeat;
+                background-position: center;
+            }
+        }
+    }
+
+    .task-title-edit {
+        flex: 1;
+        padding-left: 5px;
+
+        input[type="text"] {
+            padding: 7px 25px;
+            padding-left: 7px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            font-size: 16px;
+            color: $completed-task-color;
+            width: 93%;
+        }
+    }
+
+    .task-actions-edit {
+        display: flex;
+        align-items: center;
+
+        button {
+            margin-left: 10px;
+            background-color: $primary-color;
+            border: none;
+            color: #fff;
+            cursor: pointer;
+            padding: 8px;
+            border-radius: 10px;
+
+            &:hover {
+                background-color: darken($primary-color, 10%);
+                /* Darken the background color on hover */
+            }
+
+        }
+    }
+
+    .task-actions-edit button:last-child {
+        background-color: white;
+        color: $primary-color;
+        border: 1px solid $primary-color;
+    }
+}

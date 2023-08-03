@@ -1,0 +1,23 @@
+@import '../../styles/variables';
+
+.app-header {
+    background-color: #007bff;
+    padding: 20px;
+    text-align: center;
+    color: #fff;
+}
+
+/* Styles for the header content container */
+.header-content {
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+}
+
+/* Styles for the header title (h2 element) */
+.app-header h2 {
+    font-size: 36px;
+    font-weight: bold;
+    margin: 0;
+}

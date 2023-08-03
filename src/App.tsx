@@ -1,24 +1,23 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import "./App.scss";
+import Footer from "./components/layout/Footer";
+import Header from "./components/layout/Header";
+import TaskInput from "./components/TaskInput/TaskInput";
+import TaskList from "./components/TaskList/TaskList";
+import { useTodoContext } from "./hook/TodoListContext";
+import { getCurrentDate } from "./types/dateUtils";
+const App = () => {
+  const { tasks } = useTodoContext();
 
-function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="app">
+      <Header></Header>
+      <div className="task-container">
+        <h3 className="task-date">Today, {getCurrentDate()}</h3>
+        <TaskInput />
+        <h3>Your task {tasks.length > 0 && `(${tasks.length})`}</h3>
+        <TaskList listTask={tasks} />
+      </div>
+      <Footer></Footer>
     </div>
   );
 }

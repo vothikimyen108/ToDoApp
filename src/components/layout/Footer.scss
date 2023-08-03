@@ -1,0 +1,93 @@
+@import '../../styles/variables';
+
+/* Styles for the task footer container */
+.task-footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 0px;
+    background-color: #f1f2f3;
+
+    .task-footer-content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 60%;
+        margin: 0 auto;
+    }
+}
+
+/* Styles for the task contact section */
+.task-contract {
+    display: flex;
+    align-items: center;
+
+    a {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 32px;
+        height: 32px;
+        border-radius: 50%;
+        font-size: 18px;
+        margin: 0 10px;
+        text-decoration: none;
+
+        &:hover {
+            cursor: pointer;
+        }
+
+        &.fb-icon {
+            background-image: url('../../assets/images/facebook.svg');
+            background-size: 70%;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+
+        &.githubicon {
+            background-image: url('../../assets/images/github.svg');
+            background-size: 70%;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+
+        &.instagram-icon {
+            background-image: url('../../assets/images/instagram.svg');
+            background-size: 70%;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+    }
+
+    span {
+        font-size: 14px;
+        color: #000;
+        margin-left: 10px;
+    }
+}
+
+/* Styles for the "Clear all tasks done" button */
+.task-btn-clear {
+    button {
+        background-color: $danger-color;
+        border: none;
+        color: #fff;
+        cursor: pointer;
+        padding: 12px 20px;
+        border-radius: 8px;
+        font-size: 16px;
+
+        &:hover {
+            background-color: darken($danger-color, 10%);
+        }
+
+        &:disabled {
+            /* Styles for the disabled button */
+            background-color: #d1d1d1;
+            color: #888;
+            cursor: not-allowed;
+        }
+    }
+
+}

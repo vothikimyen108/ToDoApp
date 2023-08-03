@@ -1,0 +1,80 @@
+@import "./styles/variables";
+
+.app {
+    .error-message {
+        color: red;
+        font-size: 14px;
+        font-style: italic;
+        display: block;
+        padding: 5px;
+    }
+
+    .task-container {
+        margin: 0 auto;
+        width: 60%;
+    }
+}
+
+// Styles for the app on smaller devices
+@media only screen and (max-width: 768px) {
+    .app-header h2 {
+        font-size: 24px;
+    }
+
+    .app {
+        .task-container {
+            width: 90%;
+        }
+
+        .task-footer {
+            .task-footer-content {
+                width: 90%;
+            }
+        }
+    }
+}
+
+// Styles for the app on even smaller devices
+@media only screen and (max-width: 576px) {
+    .app {
+        .error-message {
+            font-size: 10px;
+        }
+
+        .app-header h2 {
+            font-size: 25px;
+        }
+
+        .task-container {
+
+            /* Styles for the "Add" button */
+            .task-input {
+                .task-input-btn {
+                    margin-left: 10px;
+                    padding: 8px 10px;
+                    border-radius: 8px;
+                    font-size: 13px;
+                }
+            }
+        }
+
+        .task-contract {
+            a {
+                margin: 0 5px;
+                width: 24px;
+                height: 24px;
+            }
+
+            span {
+                font-size: 10px;
+            }
+        }
+
+        .task-btn-clear {
+            button {
+                padding: 8px 10px;
+                font-size: 13px;
+            }
+        }
+    }
+}
