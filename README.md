@@ -1,7 +1,6 @@
-# Getting Started with Create React App
+# To-Do List App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
+This is a simple To-Do List web application built with React. It allows users to add tasks, mark them as completed, and delete them. The app is designed to be responsive and works on different screen sizes.
 ## Available Scripts
 
 In the project directory, you can run:
