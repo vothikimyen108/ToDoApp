@@ -31,4 +31,4 @@ This will open the app in your default browser at http://localhost:3000.
 
 # Demo
 
-![Tên hình ảnh]([https://ibb.co/xqW66Fr](https://i.ibb.co/PGKggDV/test.png)https://i.ibb.co/PGKggDV/test.png)
+![Tên hình ảnh](https://ibb.co/xqW66Fr](https://i.ibb.co/PGKggDV/test.png)https://i.ibb.co/PGKggDV/test.png)
