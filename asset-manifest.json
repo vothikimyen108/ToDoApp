@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/ToDoApp/static/css/main.4c0dd8eb.css",
+    "main.css": "/ToDoApp/static/css/main.63438c72.css",
     "main.js": "/ToDoApp/static/js/main.185957b4.js",
     "static/js/787.2843ca88.chunk.js": "/ToDoApp/static/js/787.2843ca88.chunk.js",
     "static/media/github.svg": "/ToDoApp/static/media/github.c7aaa6ad7b1035fcf5da.svg",
@@ -9,12 +9,12 @@
     "static/media/edit2.svg": "/ToDoApp/static/media/edit2.340e02a48eb4d19d1969.svg",
     "static/media/facebook.svg": "/ToDoApp/static/media/facebook.90934677f79579e4edc5.svg",
     "static/media/Vector.svg": "/ToDoApp/static/media/Vector.33cefcf4ed6a9576bbee.svg",
-    "main.4c0dd8eb.css.map": "/ToDoApp/static/css/main.4c0dd8eb.css.map",
+    "main.63438c72.css.map": "/ToDoApp/static/css/main.63438c72.css.map",
     "main.185957b4.js.map": "/ToDoApp/static/js/main.185957b4.js.map",
     "787.2843ca88.chunk.js.map": "/ToDoApp/static/js/787.2843ca88.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.4c0dd8eb.css",
+    "static/css/main.63438c72.css",
     "static/js/main.185957b4.js"
   ]
 }
