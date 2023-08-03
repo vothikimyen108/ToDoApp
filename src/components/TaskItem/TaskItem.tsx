@@ -2,7 +2,7 @@
 import React, { useState } from "react";
 import { Task } from "../../types/Task";
 import { useTodoContext } from "../../hook/TodoListContext";
-import './TaskItem.scss'
+import "./TaskItem.scss";
 
 interface TaskItemProps {
   task: Task;
@@ -54,6 +54,12 @@ const TaskItem: React.FC<TaskItemProps> = ({ task }) => {
     checkTask(task.id, e.target.checked);
   };
 
+  const handleKeyDown = (e: React.KeyboardEvent<HTMLInputElement>) => {
+    if (e.key === "Enter") {
+      handleEditSave();
+    }
+  };
+
   return (
     <div className="task-item">
       <div className="task-checkbox">
@@ -97,6 +103,7 @@ const TaskItem: React.FC<TaskItemProps> = ({ task }) => {
               defaultValue={task.taskName}
               onChange={handleOnChange}
               onBlur={handleEditSave}
+              onKeyDown={handleKeyDown}
             />
             {showError.isErr && (
               <span className="error-message">{showError.message}</span>

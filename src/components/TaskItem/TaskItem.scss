@@ -56,18 +56,13 @@
     }
 
     .completed {
-        text-decoration: line-through;
+        text-decoration:line-through;
     }
 
     .task-title {
         flex: 1;
         padding: 5px;
         color: $completed-task-color;
-
-        &.completed {
-            text-decoration: line-through;
-            color: $gray-color;
-        }
     }
 
     .task-actions {
@@ -136,11 +131,12 @@
         input[type="text"] {
             padding: 7px 25px;
             padding-left: 7px;
-            border: 1px solid #ccc;
+            border: 1px solid $gray-color;
             border-radius: 8px;
             font-size: 16px;
             color: $completed-task-color;
             width: 93%;
+            outline: none;
         }
     }
 

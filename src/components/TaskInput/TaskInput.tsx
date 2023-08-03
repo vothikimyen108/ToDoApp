@@ -1,7 +1,7 @@
 // components/TaskInput.tsx
 import React, { useState } from "react";
 import { useTodoContext } from "../../hook/TodoListContext";
-import './TaskInput.scss'
+import "./TaskInput.scss";
 
 const TaskInput = () => {
   const [taskName, setTaskName] = useState("");
